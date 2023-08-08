@@ -1,0 +1,28 @@
+@import "../../styles/abstract/variables";
+
+.footer {
+    background-color: $azul-footer;
+    padding: 10px 0 10px 0;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px -2px 30px rgba($color: #000000, $alpha: 0.5);
+    box-sizing: border-box;
+    justify-content: center;
+    a {
+        color: $roxo;
+        text-decoration: none;
+        font-family: $fonte-normal;
+        font-size: 1.125rem;
+        padding-top: 10px;
+        margin: 0;
+    }
+    a:hover{
+        transition: 800ms;  
+        color: $rosa;
+        text-shadow: 1px 1px 5px rgba($color: $roxo, $alpha: 1.0);
+        transition: 1s all;  
+    }
+}

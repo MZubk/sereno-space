@@ -1,6 +1,7 @@
 import banner from "./banner.png";
-import Header from "../../componentes/Header";
-import Menu from "../../componentes/Menu";
+import Header from "../../components/Header";
+import Menu from "../../components/Menu";
+import Footer from "../../components/Footer/Footer";
 import styles from "./HomePage.module.scss";
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
