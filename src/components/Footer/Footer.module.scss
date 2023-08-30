@@ -12,7 +12,7 @@
     box-sizing: border-box;
     justify-content: center;
     a {
-        color: $roxo;
+        color: $rosa;
         text-decoration: none;
         font-family: $fonte-normal;
         font-size: 1.125rem;
@@ -21,8 +21,7 @@
     }
     a:hover{
         transition: 800ms;  
-        color: $rosa;
-        text-shadow: 1px 1px 5px rgba($color: $roxo, $alpha: 1.0);
+        color: $roxo;
         transition: 1s all;  
     }
 }
