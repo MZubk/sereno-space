@@ -2,6 +2,7 @@ import banner from "./banner.png";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 import Footer from "../../components/Footer/Footer";
+import Gallery from "../../components/Gallery";
 import styles from "./HomePage.module.scss";
 
 export default function HomePage() {
@@ -17,6 +18,9 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+      <div className={styles.gallery}>
+        <Gallery />
+      </div>
       <Footer />
     </>
   );

@@ -1,43 +1,49 @@
 @import "../../styles/abstract/variables";
 
 .menu {
-    width: 18%;
-  
-    &__list {
-      padding-left: 0.5rem;
-      margin: 0;
-      height: 276px;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-  
-    &__item {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-  
-      &:first-child {
-        a {
-          font-weight: 700;
-          color: $roxo;
-          font-family: $fonte-normal;
-        }
-      }
-    }
-  
-    img {
-      margin-right: 0.5rem;
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
-    }
-  
-    a {
-      text-decoration: none;
-      font-size: 1.125rem;
-      color: $cor-do-texto;
-      font-family: $fonte-normal
+  display: flex;
+
+  &__list {
+    padding-left: 0.5rem;
+    margin: 0;
+    height: 276px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a:hover {
+      font-weight: 700;
+      color: $roxo;
+      font-family: $fonte-normal;
     }
   }
+
+  img {
+    margin-right: 0.5rem;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: $cor-do-texto;
+    font-family: $fonte-normal;
+  }
+}
+
+@media screen and (max-width: $medium-screen) {
+  .menu {
+    a {
+      display: none;
+    }
+  }
+}
