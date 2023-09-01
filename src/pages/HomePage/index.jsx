@@ -1,9 +1,11 @@
 import banner from "./banner.png";
-import Header from "../../components/Header";
-import Menu from "../../components/Menu";
-import Footer from "../../components/Footer/Footer";
-import Gallery from "../../components/Gallery";
 import styles from "./HomePage.module.scss";
+
+import Header from "components/Header";
+import Menu from "components/Menu";
+import Footer from "components/Footer";
+import Gallery from "components/Gallery";
+import Popular from "components/Popular";
 
 export default function HomePage() {
   return (
@@ -17,10 +19,11 @@ export default function HomePage() {
             <img src={banner} alt="A imagem da Terra vista do espaço" />
           </div>
         </section>
+        <div className={styles.gallery}>
+          <Gallery />
+          <Popular />
+        </div>
       </main>
-      <div className={styles.gallery}>
-        <Gallery />
-      </div>
       <Footer />
     </>
   );
