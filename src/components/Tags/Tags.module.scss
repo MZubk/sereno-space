@@ -26,6 +26,9 @@
       border-radius: 8px;
       cursor: pointer;
     }
+    li:hover {
+      background: linear-gradient($tag-color, $azul-claro);
+    }
   }
 }
 
