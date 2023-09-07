@@ -19,10 +19,12 @@ export default function HomePage() {
             <img src={banner} alt="A imagem da Terra vista do espaço" />
           </div>
         </section>
-        <div className={styles.gallery}>
-          <Gallery />
+        <section className={styles.principal}>
           <Popular />
-        </div>
+          <div className={styles.gallery}>
+            <Gallery />
+          </div>
+        </section>
       </main>
       <Footer />
     </>

@@ -6,7 +6,6 @@ main {
 
 .principal {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
 
@@ -36,7 +35,7 @@ main {
 .gallery {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: start;
   margin-left: 17%;
   margin-top: 1rem;
 }

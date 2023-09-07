@@ -66,3 +66,9 @@
     }
   }
 }
+
+@media screen and (max-width: $small-screen) {
+  .popular {
+    display: none;
+  }
+}
